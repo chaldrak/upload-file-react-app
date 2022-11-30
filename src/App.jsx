@@ -45,12 +45,12 @@ function App() {
 
   return (
     <div 
-      className="image-area border-2 border-dashed border-white h-[400px] w-[600px] rounded-lg flex flex-col items-center justify-center space-y-4"
+      className="image-area border-2 border-dashed border-white md:h-[400px] md:w-[600px] rounded-lg flex flex-col items-center justify-center space-y-4 h-[200px] w-[300px]"
       ref={area}
     >
-      <BsFillCloudArrowUpFill className='text-8xl' />
+      <BsFillCloudArrowUpFill className='text-4xl md:text-8xl' />
       <header 
-        className='text-2xl'
+        className='text-sm md:text-2xl'
       >
         Click on the button to upload a file
       </header>
@@ -61,7 +61,7 @@ function App() {
         onChange={handleChange}
       />
       <button 
-        className='px-4 py-3 bg-violet-600 scale-100 rounded-md hover:scale-105'
+        className='px-2 py-2 md:px-4 md:py-3 bg-violet-600 scale-100 rounded-md md:hover:scale-105'
         onClick={handleInput}
       >
         Browse File
