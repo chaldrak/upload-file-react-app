@@ -1,0 +1,7 @@
+.image-area.active {
+    @apply border-solid;
+}
+
+.image-area img {
+    @apply object-cover w-full h-full rounded-md;
+}
